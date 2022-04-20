@@ -1,0 +1,26 @@
+.main-wrap {
+	width: 100%;
+	min-height: calc(100vh - 85px);
+	background-color: #202c37;
+	padding: 4rem 0;
+
+	.main__content {
+		max-width: 1240px;
+		margin: 0 auto;
+		min-height: calc(100vh - 85px);
+		padding: 0 2rem;
+
+		.countries__wrap {
+			margin-top: 50px;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 5rem;
+
+			@media screen and (max-width: 1310px) {
+				gap: 3rem;
+				justify-content: space-around;
+			}
+
+		}
+	}
+}

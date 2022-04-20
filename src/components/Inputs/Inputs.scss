@@ -1,0 +1,119 @@
+.inputs-wrap {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	.search__input {
+		display: inline-flex;
+		padding: 20px 40px;
+		margin-right: 20px;
+		background-color: #2b3945;
+		align-items: center;
+		border-radius: 5px;
+		box-shadow: hsla(0,0%,96.1%,0.2) 0 0 8px;
+		cursor: text;
+
+		.io__search {
+			color: #fff;
+			margin: 0px 15px 0px 0px;
+		}
+
+		input {
+			background-color: transparent;
+			border: none;
+			outline: none;
+			color: #fff;
+
+			&::placeholder {
+				color: #fff;
+			}
+
+			@media screen and (max-width: 265px) {
+				width: 50%;
+			}
+		}
+
+		.io__close {
+			color: #fff;
+			cursor: pointer;
+			&.hide_close {
+				opacity: 0;
+				pointer-events: none;
+			}
+		}
+
+		@media screen and (max-width: 579px) {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+
+		@media screen and (max-width: 310px) {
+			padding: 10px 20px;
+		}
+
+		@media screen and (max-width: 265px) {
+			padding: 5px 10px;
+		}
+	}
+
+	.filter__wrap {
+		width: 200px;
+		background-color: #2b3945;
+
+		display: flex;
+		flex-direction: column;
+		position: relative;
+
+		border-radius: 6px;
+		box-shadow: hsla(0,0%,96.1%,0.2) 0 0 8px;
+
+		.filter__select {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: 15px 5px;
+			cursor: pointer;
+			.filter__title {
+				color: #fff;
+				padding: 0px 10px;
+				border-right: 1px solid #fff;
+			}
+	
+			.io__filter__down, .io__filter__up {
+				color: #fff;
+				font-size: 1.5rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: .2s transform;
+				padding: 0px 10px;
+			}
+			.io__filter__down {
+				transform: rotate(180deg);
+			}
+		}
+
+		.filter__option {
+			.option__wrap {
+				position: absolute;
+				width: 100%;
+				top: 65px;
+				left: 0px;
+				background-color: #2b3945;
+				padding: 5px 0px;
+				border-radius: 5px;
+
+				.option_item {
+					margin: 5px 20px;
+					color: #fff;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 579px) {
+		justify-content: center;
+	}
+}

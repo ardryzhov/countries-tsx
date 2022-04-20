@@ -1,0 +1,64 @@
+.country__wrap-skeleton {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	background-color: #2b3945;
+	border-radius: .5rem;
+	box-shadow: hsla(0,0%,96.1%,0.2) 0 0 8px;
+	color: #fff;
+	text-decoration: none;
+
+	@keyframes skeleton-loading {
+		0% {
+			background-color: hsl(200, 20%, 70%);
+		}
+		100% {
+			background-color: hsl(200, 20%, 95%);
+		}
+	}
+
+	.country__image-skeleton {
+		width: 100%;
+		height: 150px;
+		border-radius: .5rem;
+		object-fit: cover;
+		animation: skeleton-loading 1s linear infinite alternate;
+		animation-duration: .8s;
+	}
+
+	.country__section-skeleton {
+		padding: 1rem 1.5rem 2rem;
+
+		.country__title-skeleton {
+			width: 75%;
+			animation: skeleton-loading 1s linear infinite alternate;
+			padding: 8px 0px;
+			margin: 5px 0px;
+			border-radius: 6px;
+		}
+
+		.country__info-skeleton {
+			padding: .5rem 0px 0px;
+
+			.country__info_container-skeleton {
+				margin: 10px 0px;
+				padding: 5px 0px;
+				animation: skeleton-loading 1s linear infinite alternate;
+				border-radius: 6px;
+				
+				&.population-skeleton {
+					width: 60%;
+					animation-duration: .6s;
+				}
+				&.region-skeleton {
+					width: 40%;
+					animation-duration: .5s;
+				}
+				&.capitl-skeleton {
+					width: 50%;
+					animation-duration: .8s;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,131 @@
+.country__card_wrap {
+	width: 100%;
+	min-height: calc(100vh - 85px - 4rem);
+	background-color: #202c37;
+	padding-top: 4rem;
+
+	.card__content {
+		max-width: 1240px;
+		margin: 0 auto;
+		padding: 0 2rem;
+
+		.button__back {
+			display: inline-flex;
+			padding: 10px 0px;
+			background-color: #2b3945;
+			box-shadow: hsla(0,0%,96.1%,0.2) 0 0 8px;
+			border-radius: 6px;
+			color: #fff;
+			cursor: pointer;
+			align-items: center;
+			justify-content: space-evenly;
+			.btn__back_icon {
+				margin: 0px 5px 0px 25px;
+			}
+		}
+
+		.button__back button {
+			margin: 0px 25px 0px 5px;
+			border: none;
+			outline: none;
+			border-radius: 6px;
+			background-color: transparent;
+			color: #fff;
+			cursor: pointer;
+		}
+
+		.country__section {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-between;
+			margin-top: 2rem;
+			height: 100%;
+
+			.country__section_img {
+				width: 50%;
+				height: 100%;
+				img {
+					margin-top: 2rem;
+					width: 100%;
+					height: 100%;
+				}
+
+				@media screen and (max-width: 980px) {
+					width: 100%;
+				}
+			}
+
+			.country__info {
+				width: 45%;
+				color: #fff;
+
+				.country__info_name {
+					font-size: 2rem;
+					margin-bottom: 1rem;
+				}
+
+				.country__info_about {
+					display: flex;
+					flex-direction: column;
+					flex-wrap: wrap;
+					height: 175px;
+
+					.info__about {
+						margin: 5px 0px;
+						font-size: 0.9rem;
+						span {
+							font-weight: 200;
+						}
+						.info__about_label {
+							font-weight: 600;
+						}
+					}
+
+					@media (max-width: 500px) {
+						height: auto;
+						display: flex;
+					}
+				}
+				@media screen and (max-width: 980px) {
+					width: 100%;
+				}
+			}
+
+			.country__info_border {
+				display: flex;	
+				align-items: center;
+
+				.info_border_array {
+					display: flex;
+					flex-wrap: wrap;
+
+					.info__border_links {
+						margin-left: 1rem;
+						.info__border_link {
+							display: inline-block;
+							padding: 5px 10px;
+							margin: 10px;
+							background-color: #2b3945;
+							box-shadow: hsla(0,0%,96.1%,0.2) 0 0 8px;
+							border-radius: 6px;
+							color: #fff;
+							text-decoration: none;
+							font-size: .8rem;
+						}
+					}
+				}
+
+				@media (max-width: 350px) {
+					flex-wrap: wrap;
+				}
+			}
+
+			@media screen and (max-width: 980px) {
+				flex-direction: column;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+		}
+	}
+}

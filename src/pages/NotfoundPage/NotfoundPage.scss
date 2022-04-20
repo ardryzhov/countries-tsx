@@ -1,0 +1,12 @@
+.notfoundpage_wrap {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	.notfound_content {
+		p {
+			font-size: 1.5rem;
+		}
+	}
+}
