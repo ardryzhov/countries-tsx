@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
 	<Provider store={store}>
-		<Router basename='/'>
+		<Router basename='/countries-tsx/'>
 			<App />
 		</Router>
 	</Provider>
